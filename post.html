@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Search Engine tags -->
+    <meta name="description" content="Welcome to the world of EdgeLedger">
+    <meta name="keywords" content="EdgeLedger, India, India EdgeLedger">
+    <title>Post One</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#cases">Cases</a></li>
+                    <li><a href="./index.html#blog">Blog</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>    
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas-fa-user"></i> Posted by <strong>John Doe</strong> | October 21 2021
+            </p>
+            <img src="./images/blog/blog1.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium officia perferendis doloremque quidem blanditiis impedit, quasi exercitationem eos, voluptatem quae, quia libero eaque magnam necessitatibus numquam corporis ipsam officiis quis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores incidunt quisquam labore harum delectus ipsam illo voluptatum architecto. Molestiae eos et explicabo, iure aliquam minus obcaecati ducimus, veritatis vel rem unde voluptatem suscipit sapiente facilis error nobis quod quaerat magnam reiciendis debitis natus, soluta assumenda distinctio modi? Provident tenetur suscipit quibusdam corporis nemo quo sit ea voluptatem nobis repellendus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quis laboriosam voluptatum aspernatur facere quidem dolore veniam commodi tempora dicta est totam at ducimus, officiis magnam culpa libero, minima nam reprehenderit expedita pariatur ratione amet aut rerum. Earum maiores saepe temporibus eligendi, corporis quam ab ea et delectus cupiditate. Illo!</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/ranjan-kumar-m-818367158/"><i class="fab fa-linkedin fa-2x"></i> </a>
+            <a href="https://github.com/ranjankumarmandal"><i class="fab fa-github fa-2x"></i> </a>
+            <a href="https://mobile.twitter.com/Ranjan_ok"><i class="fab fa-twitter fa-2x"></i> </a>
+        </div>
+        <p>Copyright &copy; 2021 - EdgeLedger</p>
+    </footer>
+
+    <!-- JavaScript Code -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+        
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if(!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(() => {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+</body>
+</html>
